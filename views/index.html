@@ -1,14 +1,22 @@
-<html lang="en">
+<html lang="tr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Welcome</title>
+  <link href="/css/index.css" rel="stylesheet" />
+  <title>Ödeme Paneli</title>
 </head>
 
 <body>
-  <h1>Home Page</h1>
+  <div id="page-container" class="page-container">
+    <p>OTOKAR Ödeme Paneli</p>
+    <button id="recieveBillButton">Ödeme fişini al</button>
+    <div><span id="amountSpan"> - </span><span id="currencySpan">TL</span></div>
+    <button id="payButton" disabled>Öde</button>
+  </div>
+
+  <script src="/js/index.js"></script>
 </body>
 
 </html>
