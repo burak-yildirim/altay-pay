@@ -66,6 +66,7 @@
       console.log(`paymentResponse: ${JSON.stringify(paymentResponse)}`);
       var message = paymentResponse.returnCode === 1000 ? 'Ödeme başarıyla tamamlandı' : 'Ödemede hata!';
       window.alert(message);
+      amountSpan.innerText = ' - ';
       console.log('payment completed');
       canPay = false;
     } catch (error) {
